@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Pesquisa de Cliente</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">Fechar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Digite o nome do cliente</ion-label>
+    <ion-input [(ngModel)]="searchTerm" (ionInput)="searchClientes()"></ion-input>
+  </ion-item>
+
+  <ion-list *ngIf="clientesFiltrados.length > 0">
+    <ion-item *ngFor="let cliente of clientesFiltrados" (click)="openClienteDetails(cliente)">
+      {{ cliente.nome }}
+    </ion-item>
+  </ion-list>
+
+  <ion-item *ngIf="clientesFiltrados.length === 0 && searchTerm">
+    <ion-label>Nenhum cliente encontrado.</ion-label>
+  </ion-item>
+</ion-content>

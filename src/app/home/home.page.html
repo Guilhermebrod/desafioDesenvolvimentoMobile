@@ -1,0 +1,29 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<ion-header>
+  <div class = "cabecalho">
+    AcadiApp
+  </div>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="let cliente of clientes" (click)="openEditClienteModal(cliente)">
+    <ion-label>
+      <h2>{{ cliente.nome }}</h2>
+    </ion-label>
+  </ion-item>
+</ion-list>
+
+
+</ion-content>
+
+<ion-footer class="cabecalho">
+  <section class = "grid">
+    <img src=".\assets\icon\lupa.png" class = "lupa" (click)="openSearchModal()"/>
+    <img src=".\assets\icon\mais.png" class = "cruz" (click)="openAddClienteModal()" />
+  </section>
+  
+</ion-footer>

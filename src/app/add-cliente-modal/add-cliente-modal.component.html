@@ -1,0 +1,103 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Adicionar Cliente</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">Fechar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form (ngSubmit)="addCliente()">
+    <ion-item>
+      <ion-label position="stacked">Nome* </ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.nome" name="nome" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Serviço </ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.servico" name="servico" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Situação</ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.situacao" name="situacao" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Sistema</ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.sistema" name="sistema" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Protocolo</ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.protocolo" name="protocolo" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Nome Completo</ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.nome_completo" name="nome_completo" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">RG</ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.rg" name="rg" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">CPF</ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.cpf" name="cpf" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Endereço Residencial </ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.endereco_residencial" name="endereco_residencial" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">CNPJ</ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.cnpj" name="cnpj" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Endereço Comercial </ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.endereco_comercial" name="endereco_comercial" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Valor do Contrato </ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.valor_contrato" name="valor_contrato" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Forma de Pagamento </ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.forma_pagamento" name="forma_pagamento" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Pagamento Entrada </ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.pagamento_entrada" name="pagamento_entrada" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Segunda Parcela </ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.segunda_parcela" name="segunda_parcela" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Município </ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.municipio" name="municipio" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Responsável </ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.responsavel" name="responsavel" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Status </ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.status" name="status" ></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" type="submit">Salvar</ion-button>
+  </form>
+</ion-content>

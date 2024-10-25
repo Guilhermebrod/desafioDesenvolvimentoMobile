@@ -1,0 +1,52 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.cabecalho{
+  height: 50px;
+  background-color: #265db7;
+  width:auto;
+  font-style: 'Roboto';
+  font-size: medium;
+  align-content: space-evenly;
+  text-indent: 20px;
+  background: linear-gradient(to right, #184b9c, #598ee2)
+}
+
+.lupa{
+  margin-left: 70px;
+  align-content: space-evenly;
+}
+
+.cruz{
+  margin-left: 50;
+}
+.grid{
+  display: grid;
+  grid-template-columns: auto auto; /* Duas colunas para os dois botões */
+  gap: 100px;
+}
