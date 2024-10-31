@@ -18,6 +18,7 @@
 ## Ideia do projeto:
 ### Entrei em contato com uma empresa e ela pediu um aplicativo para guardar os dados que eles salvavam em uma planilha excel.
 ### Sugeri utilizar o banco de dados do google Firebase para guardar os dados e eles gostaram da ideia.
+### Utilizei o framework ionic para desenvolver o aplicativo e depois transformei em .apk.
 
 ## Firebase, o que é:
 https://firebase.google.com/
